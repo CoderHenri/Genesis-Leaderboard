@@ -12,3 +12,21 @@
     text-align: center;
     margin-top: -25px;
 }
+
+#GenesisMapBox {
+    width: 1525px;
+    height: 1525px;
+    position: relative;
+    border: 1px solid black;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#GenesisMap {
+    width: 3050px;
+    height: 3050px;
+    background-image: url("Images/Genesis_Land_Map.png");
+    position: absolute;
+    transform: scale(0.5, 0.5);
+    transform-origin: 0px 0px;
+}

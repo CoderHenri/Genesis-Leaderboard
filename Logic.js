@@ -4,7 +4,6 @@
     var col = -30;
     var row = 30;
 
-
     var i = 0;
     while (i < 61) {
       
@@ -31,6 +30,19 @@
       i++;
     }
 
+
+
+/*  Important for later
+    var ol = document.getElementById("GenesisLeaderList");
+
+    for( var i = 0; i < data.length; i++ )
+    { 
+       var o = data[i];
+       var li = document.createElement("li");
+       li.appendChild(document.createTextNode(o.title));
+       ol.appendChild(li);    
+    }                   
+ */
 /*
   fetch(url, {
     method: "POST",
