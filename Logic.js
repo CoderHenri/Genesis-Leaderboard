@@ -1,9 +1,12 @@
  function GetLandData() {
    
+
+  var GenesisPlot = {};
+  var Coordinates = [];
+
     var url = "https://axieinfinity.com/graphql-server/graphql"
     var col = -30;
     var row = 30;
-
     var i = 0;
     while (i < 61) {
       
@@ -22,11 +25,14 @@
           query: "query GetLandDetail($col: Int!, $row: Int!) {   land(col: $col, row: $row) {     ...LandDetail     __typename   } }  fragment LandDetail on Land {   realTokenId   owner   landType   row   col   bundles   auction {     ...AxieAuction     __typename   }   offers {     ...OfferDetail     __typename   }   ownerProfile {     name     __typename   }   __typename }  fragment AxieAuction on Auction {   startingPrice   endingPrice   startingTimestamp   endingTimestamp   duration   timeLeft   currentPrice   currentPriceUSD   suggestedPrice   seller   listingIndex   auctionType   __typename }  fragment OfferDetail on Offer {   offerer {     ...ProfileBrief     __typename   }   listingIndex   price   createdAt   __typename }  fragment ProfileBrief on AccountProfile {   accountId   addresses {     ...Addresses     __typename   }   email   name   __typename }  fragment Addresses on NetAddresses {   ethereum   tomo   loom   __typename } "
         })
       })
-      .then(r => r.json())
-      .then(data => console.log("data returned:", data));
+      .then(function(response) { 
+        return response.json(); 
+      })
+      .then(function(data) {
+        console.log("data returned:", data);
+      });
 
       row = row - 1;
-      console.log(row);
       i++;
     }
 

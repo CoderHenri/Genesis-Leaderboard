@@ -30,3 +30,17 @@
     transform: scale(0.5, 0.5);
     transform-origin: 0px 0px;
 }
+
+#GenesisRanking {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 500px;
+}
+
+.GenList{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
