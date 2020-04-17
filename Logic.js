@@ -10,7 +10,7 @@ function GetLandData() {
   var i = 0;
   var y = 0;
 
-  while (i < 61) {
+  while (i < 82) {
     fetch(url, {
       method: "POST",
       headers: {
@@ -45,7 +45,7 @@ function GetLandData() {
       console.log(GenesisPlotOwners);
       console.log("entire data:", data);
 
-      if(y == 52) {
+      if(y == 70) {
 
         GenesisPlotOwners.sort();
 
@@ -69,16 +69,20 @@ function GetLandData() {
 
         GenLeaders.sort((a,b) => b.amount - a.amount || a.owner - b.owner);
 
-        document.getElementById('GList').innerHTML = '<ol>' + GenLeaders.map(function (genesis) {
-            return '<li>' + String(genesis["amount"]) + " Genesis Plots owned by " + String(genesis["owner"]) + '</li>';
+        document.getElementById('GList').innerHTML = '<ol id="GL">' + GenLeaders.map(function (genesis) {
+            return '<li>' + String(genesis["amount"]) + " Genesis Plot(s) owned by " + String(genesis["owner"]) + '</li>';
         }).join('') + '</ol>';
         console.log(GenLeaders);
       }
       console.log(y);
       y++;
     });
-
-    row = row - 1;
+    if(row > -30) {
+      row = row - 1;
+    } else if(col < -9) {
+      col = col + 1;
+    }
+    console.log(row, col);
     i++;
   }
 
