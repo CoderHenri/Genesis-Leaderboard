@@ -1,12 +1,12 @@
-function GetLandData() {
+ function GetLandData() {
    
     var url = "https://axieinfinity.com/graphql-server/graphql"
     var col = -30;
-    var row = 20;
+    var row = 30;
 
 
     var i = 0;
-    while (i < 10) {
+    while (i < 61) {
       
       fetch(url, {
         method: "POST",
@@ -55,3 +55,5 @@ function GetLandData() {
   //https://axieinfinity.com/marketplace-api/query-land?row=-30&col=-22
 
 }
+
+
