@@ -1,6 +1,20 @@
+#webpage{
+  background-color: #36393E;
+}
+
 #Headline {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #00008B;
+    text-shadow:
+      -2px -2px 0 #FF8C00,
+      0   -2px 0 #FF8C00,
+      2px -2px 0 #FF8C00,
+      2px  0   0 #FF8C00,
+      2px  2px 0 #FF8C00,
+      0    2px 0 #FF8C00,
+      -2px  2px 0 #FF8C00,
+      -2px  0   0 #FF8C00;
     text-align: center;
     margin-top: 0px;
 }
@@ -9,6 +23,16 @@
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    color: #00008B;
+    text-shadow:
+      -1px -1px 0 #FF8C00,
+      0   -1px 0 #FF8C00,
+      1px -1px 0 #FF8C00,
+      1px  0   0 #FF8C00,
+      1px  1px 0 #FF8C00,
+      0    1px 0 #FF8C00,
+      -1px  1px 0 #FF8C00,
+      -1px  0   0 #FF8C00;
     text-align: center;
     margin-top: -50px;
 }
@@ -18,7 +42,7 @@
     width: 1525px;
     height: 1525px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #FF8C00;
     left: 50%;
     transform: translate(-50%);
 }
@@ -35,14 +59,25 @@
 #GenesisRanking {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #00008B;
+    text-shadow:
+      -1.5px -1.5px 0 #FF8C00,
+      0   -1.5px 0 #FF8C00,
+      1.5px -1.5px 0 #FF8C00,
+      1.5px  0   0 #FF8C00,
+      1.5px  1.5px 0 #FF8C00,
+      0    1.5px 0 #FF8C00,
+      -1.5px  1.5px 0 #FF8C00,
+      -1.5px  0   0 #FF8C00;
     text-align: center;
     margin-top: 500px;
     text-decoration: underline;
 }
 
 #GList{
-    font-size: 35px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #FF8C00;
     text-align: center;
     margin-top: -75px;
 }
