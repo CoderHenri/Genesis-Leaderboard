@@ -44,7 +44,7 @@ function GetLandData() {
         } 
       }
       catch {
-        text = "No Account registered";
+        text = "Non-Registered Users";
         GenesisPlotOwners.push(text);
       }
       console.log(GenesisPlotOwners);
@@ -55,7 +55,7 @@ function GetLandData() {
         GenesisPlotOwners.sort();
 
         for(d=0; d < 7; d++){     // Deletes the street plots between the Genesis plots
-          const index = GenesisPlotOwners.indexOf("No Account registered");
+          const index = GenesisPlotOwners.indexOf("Non-Registered Users");
           if (index > -1) {
             GenesisPlotOwners.splice(index, 1);
           }
