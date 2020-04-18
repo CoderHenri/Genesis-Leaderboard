@@ -85,7 +85,7 @@
     position: absolute;
     content: "";
     height: 42px;
-    width: 42px;
+    width: 84px;
     left: 4px;
     bottom: 4px;
     background-color: #00008B;
@@ -102,9 +102,9 @@
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(400px);
-    -ms-transform: translateX(400px);
-    transform: translateX(400px);
+    -webkit-transform: translateX(358px);
+    -ms-transform: translateX(358px);
+    transform: translateX(358px);
     background-color:#FF8C00;
   }
 
