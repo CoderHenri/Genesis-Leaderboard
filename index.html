@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body id="webpage" onload="GetLandData()">
+<body id="webpage" onload="GetLandData3()">
     <div id="Ueberschrift">
         <h1 id="Headline">GENESIS LAND</h1>
             <p id="Underline">Existing Genesis plots from the Q1 sale and their owners</p>
@@ -17,8 +17,8 @@
     </div>
 
     <div id="Toggle">
-        <label class="switch">
-            <input type="checkbox">
+        <label class="switch" >
+            <input type="checkbox" onclick="Switcheru()">
             <span class="slider"></span>
           </label>
     </div>
@@ -27,6 +27,15 @@
         <div id="GenesisMap">
             <h2 id="GenesisRanking"> Genesis Land Owner Rankings </h2>
             <div id="GList"></div>
+        </div>
+    </div>
+
+    <div id="GenesisOwners" >
+        <div id="GenesisOwnersNorth">
+            <h2 id="GenNorth"> NORTH </h2>
+        </div>
+        <div id="GenesisOwnersWest">
+            <h2 id="GenWest"> WEST </h2>
         </div>
     </div>
 

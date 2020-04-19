@@ -99,6 +99,19 @@ function GetLandData() {
   }  
 }
 
+function Switcheru(){
+  var x = document.getElementById("GenesisMapBox");
+  var s = document.getElementById("GenesisOwners");
+  if(x.style.display === "none") {
+    x.style.display = "block";
+    s.style.display = "none";
+  } else {
+    x.style.display = "none";
+    s.style.display = "block";
+  }
+}
+
+
 //Testbed code:
 function GetLandData2() {
    

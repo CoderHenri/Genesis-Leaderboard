@@ -163,3 +163,7 @@ input:checked + .slider:after
   white-space:nowrap;
 }
   /* Slider End */
+
+#GenesisOwners{
+  display: none;
+}
