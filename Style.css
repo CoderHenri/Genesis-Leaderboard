@@ -166,4 +166,44 @@ input:checked + .slider:after
 
 #GenesisOwners{
   display: none;
+  margin-top: 20px;
+  width: 3050px;
+  height: 3820px;
+  border: 1px solid #FF8C00;
+  position: relative;
+}
+
+#GenesisOwnersNorthBox{
+  width: 3050px;
+  height: 770px;
+  border: 1px solid #FF8C00;
+  position: absolute;
+  background-image: url("Images/Genesis_Land_Map_NORTH.png");
+}
+
+#GenesisOwnersWestBox{
+  top: 770px;
+  width: 1100px;
+  height: 3050px;
+  border: 1px solid #FF8C00;
+  position: absolute;
+  background-image: url("Images/Genesis_Land_Map_WEST.png");
+}
+
+.GenPos{
+  font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00008B;
+    text-shadow:
+      -2px -2px 0 #FF8C00,
+      0   -2px 0 #FF8C00,
+      2px -2px 0 #FF8C00,
+      2px  0   0 #FF8C00,
+      2px  2px 0 #FF8C00,
+      0    2px 0 #FF8C00,
+      -2px  2px 0 #FF8C00,
+      -2px  0   0 #FF8C00;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 10px;
 }
