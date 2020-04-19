@@ -101,7 +101,7 @@ function GetLandData() {
 
 function Switcheru(){
   var x = document.getElementById("GenesisMapBox");
-  var s = document.getElementById("GenesisOwners");
+  var s = document.getElementById("GenesisOwnersButton");
   if(x.style.display === "none") {
     x.style.display = "block";
     s.style.display = "none";
@@ -111,6 +111,18 @@ function Switcheru(){
   }
 }
 
+function Scale(){
+  var x = document.getElementById("ScaleButton");
+  var s = document.getElementById("GenesisOwnersSizer");
+  if(x.innerHTML === "Zoom In") {
+    x.innerHTML = "Zoom Out";
+    s.style.transform = "scale(0.25)";
+  } else {
+    x.innerHTML = "Zoom In";
+    s.style.transform = "scale(1)";
+    
+  }
+}
 
 //Testbed code:
 function GetLandData2() {
