@@ -41,10 +41,28 @@ function GetLandData() {
 
         if(text != "Invalid") {
           GenesisPlotOwners.push(text);
+          try {
+            var P = document.getElementById("N" + data.data.land.row + data.data.land.col);
+            if(text.length > 25) {
+              text = text.substring(0, 25) + "...";
+            }
+            P.innerHTML = text;
+          }
+          catch {
+            try {
+              var O = document.getElementById("W" + data.data.land.row + data.data.land.col);
+              if(text.length > 25) {
+                text = text.substring(0, 25) + "...";
+              }
+              O.innerHTML = text;
+            }
+            catch {}
+          }
         } 
       }
       catch {
         text = "Non-Registered Users";
+
         GenesisPlotOwners.push(text);
       }
       console.log(GenesisPlotOwners);
