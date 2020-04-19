@@ -116,10 +116,10 @@ function Scale(){
   var s = document.getElementById("GenesisOwnersSizer");
   if(x.innerHTML === "Zoom In") {
     x.innerHTML = "Zoom Out";
-    s.style.transform = "scale(0.25)";
+    s.style.transform = "scale(1)";
   } else {
     x.innerHTML = "Zoom In";
-    s.style.transform = "scale(1)";
+    s.style.transform = "scale(0.25)";
     
   }
 }

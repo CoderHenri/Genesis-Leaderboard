@@ -166,8 +166,6 @@ input:checked + .slider:after
 
 #GenesisOwnersButton{
   display: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #ScaleButton{
@@ -186,16 +184,15 @@ input:checked + .slider:after
 
 #GenesisOwnersSizer{
   transform: scale(0.25);
-  transform-origin: 50% 0;
+  transform-origin: top center;
 }
 
 #GenesisOwners{
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-top: 20px;
   width: 3050px;
   height: 3820px;
-  border: 1px solid #FF8C00;
+  border: 2px solid #FF8C00;
   position: relative;
 }
 
@@ -208,7 +205,7 @@ input:checked + .slider:after
 }
 
 #GenesisOwnersWestBox{
-  top: 770px;
+  margin-top: 770px;
   width: 1100px;
   height: 3050px;
   border: 1px solid #FF8C00;
@@ -233,3 +230,137 @@ input:checked + .slider:after
   margin-top: 0px;
   margin-left: 10px;
 }
+
+.GenOwnerName{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00008B;
+  text-shadow:
+    -1px -1px 0 #FF8C00,
+    0   -1px 0 #FF8C00,
+    1px -1px 0 #FF8C00,
+    1px  0   0 #FF8C00,
+    1px  1px 0 #FF8C00,
+    0    1px 0 #FF8C00,
+    -1px  1px 0 #FF8C00,
+    -1px  0   0 #FF8C00;
+}
+
+/* alle Zexzfeld Koordinaten */
+
+#N-30-29{
+  position: absolute;
+  margin-top: 633px;
+  margin-left: 160px;
+}
+
+#N-30-28{
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 160px;
+}
+
+#N-30-27{
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 160px;
+}
+
+#N-30-26{
+  position: absolute;
+  margin-top: 697px;
+  margin-left: 438px;
+}
+
+#N-30-25{
+  position: absolute;
+  margin-top: 633px;
+  margin-left: 715px;
+}
+
+#N-30-24{
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 715px;
+}
+
+#N-30-23{
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 715px;
+}
+
+#N-30-22{
+  position: absolute;
+  margin-top: 697px;
+  margin-left: 994px;
+}
+
+#N-30-21{
+  position: absolute;
+  margin-top: 633px;
+  margin-left: 1272px;
+}
+
+#N-30-20{
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 1272px;
+}
+
+#N-30-19{
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 1272px;
+}
+
+#N-30-18{
+  position: absolute;
+  margin-top: 697px;
+  margin-left: 1550px;
+}
+
+#N-30-17{
+  position: absolute;
+  margin-top: 633px;
+  margin-left: 1827px;
+}
+
+#N-30-16{
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 1827px;
+}
+
+#N-30-15{
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 1827px;
+}
+
+#N-30-14{
+  position: absolute;
+  margin-top: 697px;
+  margin-left: 2105px;
+}
+
+#N-30-13{
+  position: absolute;
+  margin-top: 633px;
+  margin-left: 2382px;
+}
+
+#N-30-12{
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 2382px;
+}
+
+#N-30-11{
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 2382px;
+}
+
+/* North finished*/
+
