@@ -119,7 +119,7 @@ function Scale(){
     s.style.transform = "scale(1)";
   } else {
     x.innerHTML = "Zoom In";
-    s.style.transform = "scale(0.25)";
+    s.style.transform = "scale(0.5)";
     
   }
 }
